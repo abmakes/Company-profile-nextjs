@@ -4,7 +4,7 @@ export default function CardSection () {
   return (
     <section className='cardSection'>
     
-    <div><h2>We offer high demand services</h2></div>
+    <div><h2>We offer high <br />demand services</h2></div>
     
     <div className='cardGroup'>
       <div className='card'>
@@ -80,6 +80,7 @@ export default function CardSection () {
       }
 
       .cardSection {
+        margin: 10px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -95,13 +96,13 @@ export default function CardSection () {
       }
 
       .green {
-        background-color: green;
+        background-color: #27AE60;
       }
       .blue {
-        background-color: blue;
+        background-color: #2D9CDB;
       }
       .red {
-        background-color: red;
+        background-color: #EB5757;
       }
 
       .btnSecondary {

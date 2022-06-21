@@ -1,8 +1,14 @@
 .container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 10px;
 }
 
 .navbar {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,9 +16,7 @@
 
 .main {
   margin: 0 0 0 2rem;
-  min-height: 100vh;
   width: 300px;
-  padding: 4rem 0rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -20,24 +24,18 @@
   align-items: left;
 }
 
-.menu {
-  color: yellow;
-}
-
 .borderRadius18 {
-  position: relative;
-  left: -2rem;
-  width: 100vw;
   display: flex;
   justify-content: center;
   border-radius: 18px;
   height: 135px;
-  background: url("/heroImage.jpg");
+  background: url("/heroImage60.webp");
   background-size: 100% 100%;
   overflow: hidden;
 }
 
 .logo {
+  padding: 10px 20px;
   font-family: Heebo;
   font-size: 36px;
   font-weight: 800;
@@ -133,7 +131,7 @@
   .borderRadius18 {
     left: -20rem;
     height: 354px;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   

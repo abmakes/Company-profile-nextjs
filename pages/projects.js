@@ -10,7 +10,9 @@ export default function Projects () {
   
   return (
     <>
-    <h2 className="h2-container">Good design means<br /> good business</h2>
+    <div className="margin10">
+      <h2 >Good design means<br /> good business</h2>
+    </div>
     <section className='project-section'>
       <div className="projects-container">
         <div className="project" >
@@ -18,8 +20,8 @@ export default function Projects () {
             className={styles.projectImg}  
             src={smarthomePic}
             alt="Smart home dashboard"
-            height="545px"
-            width="545px"
+            height={545}
+            width={545}
           />
           <span className="catergory-text">Full stack application</span>
           <span className="project-title">Smart home dashboard</span>
@@ -30,8 +32,8 @@ export default function Projects () {
             className={styles.projectImg} 
             src={onboardPic}
             alt="Onboard application"
-            height="545px"
-            width="545px"
+            height={545}
+            width={545}
           />
           <span className="catergory-text">UX/UI design</span>
           <span className="project-title">Onboard application</span>
@@ -42,10 +44,10 @@ export default function Projects () {
             className={styles.projectImg}  
             src={juicePic}
             alt="Booking system"
-            height="545px"
-            width="545px"
+            height={545}
+            width={545}
           />
-          <span className="catergory-text">Front End applicati on</span>
+          <span className="catergory-text">Front End application</span>
           <span className="project-title">Juice product homepage</span>
         </div>
 
@@ -54,8 +56,8 @@ export default function Projects () {
             className={styles.projectImg}  
             src={bookingPic}
             alt="Booking system"
-            height="545px"
-            width="545px"
+            height={545}
+            width={545}
           />
           <span className="catergory-text">Mobile application</span>
           <span className="project-title">Booking system</span>
@@ -66,11 +68,18 @@ export default function Projects () {
           <svg className="arrow" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M17.5 16.5 16.075 15.1 18.175 13H3V11H18.175L16.1 8.9L17.525 7.5L22 12Z"/></svg>
         </h4>
       </div>
-      <style jsx>{`
+      
+    </section>
+    <style jsx>{`
         .project-section {
+          margin: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+
+        .margin10 {
+          margin: 10px;
         }
 
         .projects-container {
@@ -84,13 +93,13 @@ export default function Projects () {
         .project {
           display: flex;
           flex-direction: column;
-          max-width: 545px;
+          max-width: 400px;
           border-radius: 12px;
           overflow: hidden;
         }
 
         .top-gap {
-          margin-top: 10rem;
+          margin-top: 1rem;
         }
 
         .catergory-text {
@@ -109,17 +118,57 @@ export default function Projects () {
 
         .see-more {
           position: relative;
-          top: -3.5rem;
+          width: 100%;
+          text-align: right;
+          top: -1rem;
         }
 
         .arrow {
           position: relative;
-          top: 6px;
+          top: 8px;
           fill: #2D9CDB;
+        }
+        
+        @media only screen and (min-width: 540px) {
+          .top-gap {
+            margin-top: 1rem;
+          }
+
+          .see-more {
+            position: relative;
+            top: -3.5rem;
+          }
+
+          .projects-container {
+            justify-content: center;
+            max-width: 920px;
+          }
+
+        }
+
+        @media only screen and (min-width: 870px) {
+          .top-gap {
+            margin-top: 10rem;
+          }
+        }
+        
+        @media only screen and (min-width: 1160px) {
+
+
+          .arrow {
+            top: 6px;
+          }
+
+          .project {
+            max-width: 545px;
+          }
+
+          .projects-container {
+            max-width: 1120px;
+          }
         }
 
       `}</style>
-    </section>
     </>
   )
 

@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  margin: 10px;
+  margin: 10px 0px;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -58,7 +58,7 @@ svg {
 }
 
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     font-size: 16px;
     line-height: 24px;
