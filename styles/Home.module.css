@@ -1,15 +1,47 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main {
+  margin: 0 0 0 2rem;
   min-height: 100vh;
-  padding: 4rem 0;
+  width: 300px;
+  padding: 4rem 0rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
+}
+
+.menu {
+  color: yellow;
+}
+
+.borderRadius18 {
+  position: relative;
+  left: -2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  height: 135px;
+  background: url("/heroImage.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.logo {
+  font-family: Heebo;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 53px;
 }
 
 .footer {
@@ -73,44 +105,36 @@
   max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+@media only screen and (min-width: 540px) {
+  .main {
+    margin: 0 0 0 10rem;
+    width: 540px;
+  }
+
+  .borderRadius18 {
+    left: -10rem;
+    height: 254px;
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main {
+    margin: 0 0 0 20rem;
+  }
+
+  .borderRadius18 {
+    left: -20rem;
+    height: 354px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  
 }
