@@ -4,6 +4,7 @@ import onboardPic from "../public/onboard.png"
 import smarthomePic from "../public/smarthome.jpg"
 import juicePic from "../public/juice-product.png"
 import bookingPic from "../public/booking.png"
+import styles from '../styles/Projects.module.css'
 
 export default function Projects () {
   
@@ -13,22 +14,36 @@ export default function Projects () {
     <section className='project-section'>
       <div className="projects-container">
         <div className="project" >
-          <Image className="project-img" src={smarthomePic} />
+          <Image 
+            className={styles.projectImg}  
+            src={smarthomePic}
+            alt="Smart home dashboard"
+            height="545px"
+            width="545px"
+          />
           <span className="catergory-text">Full stack application</span>
           <span className="project-title">Smart home dashboard</span>
         </div>
         
         <div className="project top-gap" >
-          <Image className="project-img" src={onboardPic} />
-          <span className="catergory-text">Full stack application</span>
-          <span className="project-title">Smart home dashboard</span>
+          <Image 
+            className={styles.projectImg} 
+            src={onboardPic}
+            alt="Onboard application"
+            height="545px"
+            width="545px"
+          />
+          <span className="catergory-text">UX/UI design</span>
+          <span className="project-title">Onboard application</span>
         </div>
 
         <div className="project">
           <Image 
-            className="project-img" 
+            className={styles.projectImg}  
             src={juicePic}
             alt="Booking system"
+            height="545px"
+            width="545px"
           />
           <span className="catergory-text">Front End applicati on</span>
           <span className="project-title">Juice product homepage</span>
@@ -36,9 +51,11 @@ export default function Projects () {
 
         <div className="project top-gap">
           <Image 
-            className="project-img" 
+            className={styles.projectImg}  
             src={bookingPic}
             alt="Booking system"
+            height="545px"
+            width="545px"
           />
           <span className="catergory-text">Mobile application</span>
           <span className="project-title">Booking system</span>
@@ -70,12 +87,6 @@ export default function Projects () {
           max-width: 545px;
           border-radius: 12px;
           overflow: hidden;
-        }
-
-        .project-img {
-          max-width: 545px;
-          max-height: 545px;
-          border-radius: 12px;
         }
 
         .top-gap {
