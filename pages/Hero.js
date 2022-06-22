@@ -1,9 +1,11 @@
+import Contact from './Contact'
+
 export default function Hero() {
   return (
     <>
       <section className="shift">
         <h4>Unhappy with your website?</h4>
-        <h1>
+        <h1 className="heading1">
           We create beautiful <br />and fast web services
         </h1>
       </section>
@@ -13,18 +15,43 @@ export default function Hero() {
       <section className="shift">
         <h1>Story, emotion <br/>and purpose</h1>
         <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-        <form>
-          <label htmlFor="email">Want us to contact you?</label><br />
-          <input type="text"></input>
-          <button>Join</button>
-        </form>
-    </section>
+        <Contact />
+      </section>
 
     <style jsx>{`
+
+      .heading1 {
+        width: 540px;
+      }
+
+      form {
+        margin: 20px 0;
+        font-size: 12px;
+      }
+      
+      input {
+        background: #F2F2F2;  
+        border: none;
+        padding: 12px;
+        border-radius: 12px;
+        width: 260px;
+      }
+
+      .formButton {
+        position: relative;
+        left: -52px;
+        background: #2D9CDB;
+        color: #FFFFFF;
+        padding: 9px 12px;
+        border-radius: 12px;
+        border: none;
+        margin-top: 1rem;
+      }
+
       .shift {
         margin: 0 0 0 2rem;
-        width: 300px;
-        padding: 2rem 0rem;
+        width: 310px;
+        padding: 1rem 0rem;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -52,8 +79,8 @@ export default function Hero() {
       @media only screen and (min-width: 540px) {
         .shift {
           margin: 0 0 0 10rem;
-          padding: 4rem 0rem;
-          width: 540px;
+          padding: 2rem 0rem;
+          width: 360px;
         }
       
         .borderRadius18 {
@@ -64,8 +91,10 @@ export default function Hero() {
       }
       
       @media only screen and (min-width: 900px) {
+
         .shift {
           margin: 0 0 0 20rem;
+          width: 360px;
         }
       
         .borderRadius18 {

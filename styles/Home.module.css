@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.main {
+/* .main {
   margin: 0 0 0 2rem;
   width: 300px;
   flex: 1;
@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-}
+} */
 
 .borderRadius18 {
   display: flex;
@@ -35,7 +35,7 @@
 }
 
 .logo {
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-family: Heebo;
   font-size: 36px;
   font-weight: 800;
@@ -110,29 +110,11 @@
   }
 }
 
-@media only screen and (min-width: 540px) {
-  .main {
-    margin: 0 0 0 10rem;
-    width: 540px;
-  }
+/* @media only screen and (min-width: 540px) {
 
-  .borderRadius18 {
-    left: -10rem;
-    height: 254px;
-    background-size: auto 100%;
-  }
 }
 
 @media only screen and (min-width: 900px) {
-  .main {
-    margin: 0 0 0 20rem;
-  }
 
-  .borderRadius18 {
-    left: -20rem;
-    height: 354px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
   
-}
+} */

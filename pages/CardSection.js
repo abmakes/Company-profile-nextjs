@@ -10,7 +10,7 @@ export default function CardSection () {
       <div className='card'>
         
         <div className='icon blue'>   
-          <svg className="blue" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M39.7 14.7 33.3 8.3 35.4 6.2Q36.25 5.35 37.525 5.375Q38.8 5.4 39.65 6.25L41.8 8.4Q42.65 9.25 42.65 10.5Q42.65 11.75 41.8 12.6ZM37.6 16.8 12.4 42H6V35.6L31.2 10.4Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M19.3 8.925 15.05 4.725 16.45 3.325Q17.025 2.75 17.863 2.75Q18.7 2.75 19.275 3.325L20.675 4.725Q21.25 5.3 21.275 6.113Q21.3 6.925 20.725 7.5ZM17.85 10.4 7.25 21H3V16.75L13.6 6.15Z"/></svg>
         </div>  
         <h3>UI/UX Design</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
@@ -21,7 +21,7 @@ export default function CardSection () {
       <div className='card'>
         
         <div className='icon green'>   
-          <svg className="green" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M31.9 36 29.75 33.85 39.7 23.9 29.85 14.05 32 11.9 44 23.9ZM16 35.9 4 23.9 16.1 11.8 18.25 13.95 8.3 23.9 18.15 33.75Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M8 18 2 12 8 6 9.425 7.425 4.825 12.025 9.4 16.6ZM16 18 14.575 16.575 19.175 11.975 14.6 7.4 16 6 22 12Z"/></svg>
         </div>
         <h3>Front End</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
@@ -32,7 +32,7 @@ export default function CardSection () {
       <div className='card'>
 
         <div className='icon red'>    
-          <svg className="red" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 40V32.6H42V40ZM9 38.1H12.6V34.5H9ZM6 15.4V8H42V15.4ZM9 13.5H12.6V9.9H9ZM6 27.7V20.3H42V27.7ZM9 25.8H12.6V22.2H9Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 20V16H21V20ZM5 19H7V17H5ZM3 8V4H21V8ZM5 7H7V5H5ZM3 14V10H21V14ZM5 13H7V11H5Z"/></svg>
         </div>
     
         <h3>Back End</h3>
@@ -90,7 +90,7 @@ export default function CardSection () {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 88px;
+        width: 67px;
         padding: 20px;
         border-radius: 16px;
       }

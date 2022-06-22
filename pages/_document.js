@@ -12,6 +12,11 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <style jsx global>{`
+            #__next {
+              width: 100%;
+            }
+          `}</style>
       </body>
     </Html>
   )
