@@ -60,6 +60,7 @@ export default function Hero() {
       }
 
       .borderRadius18 {
+        margin: 0 10px;
         display: flex;
         justify-content: center;
         border-radius: 18px;
@@ -84,6 +85,7 @@ export default function Hero() {
         }
       
         .borderRadius18 {
+          margin: 0 20px;
           left: -10rem;
           height: 254px;
           background-size: auto 100%;
@@ -93,11 +95,12 @@ export default function Hero() {
       @media only screen and (min-width: 900px) {
 
         .shift {
-          margin: 0 0 0 20rem;
+          margin: 0 0 0 30vw;
           width: 360px;
         }
       
         .borderRadius18 {
+          margin: 0 50px;
           left: -20rem;
           height: 354px;
           background-size: 100% 100%;

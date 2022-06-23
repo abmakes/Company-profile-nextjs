@@ -80,12 +80,16 @@ export default function CardSection () {
       }
 
       .cardSection {
-        margin: 10px;
+        margin: 1rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
       }
-      
+            
+      svg {
+        fill: rgb(255, 255, 255);
+      }
+
       .icon {
         display: flex;
         justify-content: center;
@@ -121,6 +125,12 @@ export default function CardSection () {
         border-radius: 12px;
         border: none;
         margin-top: 1rem;
+      }
+
+      @media only screen and (min-width: 540px) {
+        .cardSection {
+          margin: 5rem 1rem;
+        }
       }
       `}</style>
   

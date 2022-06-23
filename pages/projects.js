@@ -4,7 +4,7 @@ import onboardPic from "../public/onboard.png"
 import smarthomePic from "../public/smarthome.jpg"
 import juicePic from "../public/juice-product.png"
 import bookingPic from "../public/booking.png"
-import styles from '../styles/Projects.module.css'
+import styles from '../styles/Rounded.module.css'
 
 export default function Projects () {
   
@@ -17,7 +17,7 @@ export default function Projects () {
       <div className="projects-container">
         <div className="project" >
           <Image 
-            className={styles.projectImg}  
+            className={styles.roundedImg}  
             src={smarthomePic}
             alt="Smart home dashboard"
             height={545}
@@ -29,7 +29,7 @@ export default function Projects () {
         
         <div className="project top-gap" >
           <Image 
-            className={styles.projectImg} 
+            className={styles.roundedImg} 
             src={onboardPic}
             alt="Onboard application"
             height={545}
@@ -41,7 +41,7 @@ export default function Projects () {
 
         <div className="project">
           <Image 
-            className={styles.projectImg}  
+            className={styles.roundedImg}  
             src={juicePic}
             alt="Booking system"
             height={545}
@@ -53,7 +53,7 @@ export default function Projects () {
 
         <div className="project top-gap">
           <Image 
-            className={styles.projectImg}  
+            className={styles.roundedImg}  
             src={bookingPic}
             alt="Booking system"
             height={545}
