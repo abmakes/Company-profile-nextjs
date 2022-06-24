@@ -10,7 +10,7 @@ export default function Projects () {
   
   return (
     <>
-    <div className="margin10">
+    <div id="projects" className="margin10">
       <h2 >Good design means<br /> good business</h2>
     </div>
     <section className='project-section'>

@@ -5,7 +5,7 @@ import styles from '../styles/Rounded.module.css'
 
 export default function Quote() {
   return (
-    <section className="quote-section">
+    <section id="clients" className="quote-section">
       <h2>“Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”</h2>
       <div className='client-area'>
         <Image

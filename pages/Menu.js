@@ -1,26 +1,33 @@
 
-export default function Menu(props) {
+export default function Menu() {
   return (
-    <nav className='menu' onClick={(e) => props.toggleMenu(e)}>
+    <nav className='menu'>
       
-      <a className="menu-item" target="#" >Home</a>
-      <a className="menu-item" target="#">Services</a>
-      <a className="menu-item" target="#">Our Works</a>
-      <a className="menu-item" target="#">Clients</a>
-      <a className="menu-item" target="#">Contact</a>
+      <a className="menu-item" href="#__next">Home</a>
+      <a className="menu-item" href="#services">Services</a>
+      <a className="menu-item" href="#projects">Our Works</a>
+      <a className="menu-item" href="#clients">Clients</a>
+      <a className="menu-item" href="#contact">Contact</a>
       
       <style jsx>{`
         .menu-item {
           margin: 0px 15px;
           font-size: 16px;
           font-weight: 500;
+          display: none;
         }
 
         @media only screen and (min-width: 1200px) {
           .menu-item {
             margin: 0px 20px;
-            font-size: 24px;
-            font-weight: 500;
+          }
+        }
+
+        @media only screen and (min-width: 900px) {
+          .menu-item {
+            margin: 0px 15px;
+            font-size: 20px;
+            display: inline;
           }
         }
 

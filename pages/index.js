@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Menu from '../pages/Menu'
 import styles from '../styles/Home.module.css'
@@ -9,15 +9,18 @@ import Team from './Team'
 import Contact from './Contact'
 import Quote from './Quote'
 import Footer from './Footer'
+import SideMenu from './SideMenu'
 
 export default function Home() {
   const [menuIsActive, setMenuIsActive] = useState(false)
 
   function toggleMenu(event) {
-    event.preventDefault()
+    event.stopPropagation()
+    // console.log(event.target)
     setMenuIsActive(!menuIsActive)
-    console.log(event.target);
   }
+
+  let isVisible = (menuIsActive) ? "show" : "hide";
 
   return (
     <div className={styles.container}>
@@ -30,22 +33,18 @@ export default function Home() {
       <header>
         <div className="navbar">
           <span className={styles.logo}>Edie</span>
-          {menuIsActive ? <Menu menuIsActive={menuIsActive} toggleMenu={toggleMenu} isVisible={menuIsActive} /> : 
-            <div className='mini-menu' onClick={(e) => toggleMenu(e)}>
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z"/></svg>
-            </div>
-          }
+            <Menu /> 
+
+            <SideMenu 
+              toggleMenu={toggleMenu}
+              isVisible={isVisible}   
+            />
         </div>
         <Hero />
         <style jsx>{`
           header {
-            width: 100vw;
+            width: 100%;
             margin: 20px 50px;
-          }
-
-          .mini-menu {
-            margin-right: 1rem;
-            fill: #333333;
           }
 
           .navbar {

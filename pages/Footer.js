@@ -3,14 +3,14 @@ import Contact from './Contact'
 export default function Footer() {
   return (
   
-  <div className='footer'> 
+  <div id="contact" className='footer'> 
     <div className='footer-items'>
       <div className="footer-nav">
-        <a className="menu-item" target="#" >Home</a>
-        <a className="menu-item" target="#">Services</a>
-        <a className="menu-item" target="#">Our Works</a>
-        <a className="menu-item" target="#">Clients</a>
-        <a className="menu-item" target="#">Contact</a>
+        <a className="menu-item" href="#__next">Home</a>
+        <a className="menu-item" href="#services">Services</a>
+        <a className="menu-item" href="#projects">Our Works</a>
+        <a className="menu-item" href="#clients">Clients</a>
+        <a className="menu-item" href="#contact">Contact</a>
       </div>
       <div className="social">
         <div className='logo'>Edie</div>
@@ -32,7 +32,7 @@ export default function Footer() {
         <Contact />
       </div>
     </div>
-    <div>
+    <div className='created-text'>
       <span>created by adriaanb - devChallenges.io</span>
     </div> 
     
@@ -94,6 +94,12 @@ export default function Footer() {
 
       svg {
         fill: rgb(255, 255, 255);
+      }
+
+      .created-text {
+        font-size: 12px;
+        color: #e0e0e0;
+        margin: 3rem 1rem 1rem 1rem;
       }
     `}</style>
   </div>

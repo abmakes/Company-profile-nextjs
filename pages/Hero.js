@@ -20,9 +20,7 @@ export default function Hero() {
 
     <style jsx>{`
 
-      .heading1 {
-        width: 540px;
-      }
+
 
       form {
         margin: 20px 0;
@@ -82,6 +80,10 @@ export default function Hero() {
           margin: 0 0 0 10rem;
           padding: 2rem 0rem;
           width: 360px;
+        }
+
+        .heading1 {
+            width: 540px;
         }
       
         .borderRadius18 {

@@ -4,7 +4,7 @@ export default function CardSection () {
   return (
     <section className='cardSection'>
     
-    <div><h2>We offer high <br />demand services</h2></div>
+    <div id="services"><h2>We offer high <br />demand services</h2></div>
     
     <div className='cardGroup'>
       <div className='card'>
