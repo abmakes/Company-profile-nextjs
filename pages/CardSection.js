@@ -111,7 +111,7 @@ export default function CardSection () {
 
       .btnSecondary {
         background: #E0E0E0;
-        color: #828282;
+        color: #555555;
         padding: 9px 12px;
         border-radius: 12px;
         border: none;
