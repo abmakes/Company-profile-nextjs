@@ -103,7 +103,7 @@ export default function CardSection () {
         background-color: #27AE60;
       }
       .blue {
-        background-color: #2D9CDB;
+        background-color: #005da3;
       }
       .red {
         background-color: #EB5757;
@@ -119,7 +119,7 @@ export default function CardSection () {
       }
       
       .btnPrimary {
-        background: #2D9CDB;
+        background: #005da3;
         color: #FFFFFF;
         padding: 9px 12px;
         border-radius: 12px;

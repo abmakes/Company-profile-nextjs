@@ -63,10 +63,10 @@ export default function Projects () {
           <span className="project-title">Booking system</span>
         </div>
 
-        <h4 className="see-more">
+        <span className="see-more">
           <a href="#">see more </a>
           <svg className="arrow" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M17.5 16.5 16.075 15.1 18.175 13H3V11H18.175L16.1 8.9L17.525 7.5L22 12Z"/></svg>
-        </h4>
+        </span>
       </div>
       
     </section>
@@ -117,6 +117,11 @@ export default function Projects () {
         }
 
         .see-more {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          color: #005da3;
+          margin: 0;
           position: relative;
           width: 100%;
           text-align: right;
@@ -126,7 +131,7 @@ export default function Projects () {
         .arrow {
           position: relative;
           top: 8px;
-          fill: #2D9CDB;
+          fill: #005da3;
         }
         
         @media only screen and (min-width: 540px) {
