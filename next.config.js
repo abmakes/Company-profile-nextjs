@@ -7,8 +7,10 @@ module.exports = nextConfig
 
 const ContentSecurityPolicy = `
   default-src 'self';
+  img-src 'self' data: https:;
   script-src-elem 'self';
   script-src 'self';
+  font-src 'self' *fonts.googleapis.com;  
 `
 
 const securityHeaders = []
