@@ -7,8 +7,6 @@
   padding: 0 10px;
 }
 
-
-
 .borderRadius18 {
   display: flex;
   justify-content: center;
@@ -49,27 +47,9 @@
   font-size: 1.5rem;
 }
 
-/* .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-} */
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
-
-/* @media only screen and (min-width: 540px) {
-      .cardSection {
-        margin: 5rem 1rem;
-}
-
-@media only screen and (min-width: 900px) {
-
-  
-} */

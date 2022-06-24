@@ -6,7 +6,6 @@ import CardSection from './CardSection'
 import Projects from './projects'
 import Hero from './Hero'
 import Team from './Team'
-import Contact from './Contact'
 import Quote from './Quote'
 import Footer from './Footer'
 import SideMenu from './SideMenu'
@@ -16,7 +15,6 @@ export default function Home() {
 
   function toggleMenu(event) {
     event.stopPropagation()
-    // console.log(event.target)
     setMenuIsActive(!menuIsActive)
   }
 
@@ -34,7 +32,6 @@ export default function Home() {
         <div className="navbar">
           <span className={styles.logo}>Edie</span>
             <Menu /> 
-
             <SideMenu 
               toggleMenu={toggleMenu}
               isVisible={isVisible}   
