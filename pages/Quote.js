@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import man4Pic from "../public/person4.png"
+import man4Pic from "../public/person4.webp"
 import styles from '../styles/Rounded.module.css'
 
 
