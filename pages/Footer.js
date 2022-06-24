@@ -101,6 +101,11 @@ export default function Footer() {
         color: #e0e0e0;
         margin: 3rem 1rem 1rem 1rem;
       }
+
+      .menu-item {
+        font-size: 16px;
+        line-height: 36px;
+      }
     `}</style>
   </div>
   )
