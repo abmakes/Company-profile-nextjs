@@ -23,7 +23,7 @@ export default function Contact() {
             .formButton {
               position: relative;
               left: -52px;
-              background: #2D9CDB;
+              background: #005da3;
               color: #FFFFFF;
               padding: 9px 12px;
               border-radius: 12px;
