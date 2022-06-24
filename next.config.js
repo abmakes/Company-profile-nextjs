@@ -6,14 +6,19 @@ const nextConfig = {
 module.exports = nextConfig
 
 const ContentSecurityPolicy = `
-  default-src 'self';
+  default-src 'self' 'unsafe-inline';
   img-src 'self' data: https:;
-  script-src-elem 'self';
-  script-src 'self';
-  font-src 'self' *fonts.googleapis.com;  
+  script-src 'self' 'unsafe-eval';
+  style-src 'self' fonts.googleapis.com 'unsafe-inline';
+  font-src 'self' fonts.gstatic.com;  
 `
 
-const securityHeaders = []
+const securityHeaders = [
+  {
+    key: 'Content-Security-Policy',
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
+  }
+]
 
 module.exports = {
   async headers() {
@@ -22,12 +27,7 @@ module.exports = {
         // Apply these headers to all routes in your application.
         source: '/:path*',
         headers: securityHeaders,
-      },
-      {
-        key: 'Content-Security-Policy',
-        value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
       }
-
     ]
   },
 }
