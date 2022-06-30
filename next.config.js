@@ -10,7 +10,8 @@ const ContentSecurityPolicy = `
   img-src 'self' data: https:;
   script-src 'self' 'unsafe-eval';
   style-src 'self' fonts.googleapis.com 'unsafe-inline';
-  font-src 'self' fonts.gstatic.com;  
+  font-src 'self' fonts.gstatic.com;
+  connect-src 'self';  
 `
 
 const securityHeaders = [

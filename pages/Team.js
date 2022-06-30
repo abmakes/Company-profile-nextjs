@@ -61,7 +61,7 @@ export default function Team() {
         }
 
         .red {
-          color: #EB5757;
+          color: #d14040;
         }
 
         .text {

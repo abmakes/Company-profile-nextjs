@@ -107,7 +107,7 @@ export default function Projects () {
           font-weight: 300;
           font-size: 14px;
           line-height: 21px;
-          color: #828282;
+          color: #666666;
         }
 
         .project-title {

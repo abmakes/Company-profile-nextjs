@@ -37,7 +37,7 @@ export default function Quote() {
         }
 
         .client-text {
-          color: #828282;
+          color: #767676;
         }
 
         p {
