@@ -7,5 +7,5 @@ Thereafter it also allowed for the practice in deploying, and optimizing sites o
 
 Below is a link to both the design file and final product:
 
-<figma file>  <live site>
-
+[figma file](https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2/edie-homepage?node-id=0%3A1)  [live site](https://the-edie-company.netlify.app/)
+ 
