@@ -1,4 +1,4 @@
-This is a demo website for an Fictional company.
+This is a demo website for an fictional Edie company.
 
 ## A Frontend Layout and Design Experiment
 
